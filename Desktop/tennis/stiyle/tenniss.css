@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+.points {
+    list-style: none;
+    font-size: 20px;
+    display: inline-flex;    
+    position: absolute;
+    top: 67%;
+    left: -12%;
+    font-size: 25px;
+}
+.points--point1 {
+    color: tomato;
+    padding: 0px 8px 0px 7px;
+}
+.points--point2 {
+    color: black;
+    padding-right: 8px;
+}
+.points--point3 {
+    color: blue;
+    padding-right: 8px;
+}
+.stars {
+    list-style: none;
+    display: inline-flex;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    font-size: 15px;
+}
+
+.card {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+}
+.card__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+    margin-left: 40%;    
+}
+.card-item {
+    background-color: rgb(255, 255, 255);
+    width: 210px;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.card__container:hover .card-item:hover {
+    transform: scale(1.15);
+    opacity: 1;
+    box-shadow:0px 0px 22px 8px rgba(0, 0, 0, 0);
+}
+.card-item__img {
+    width: 210px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.card-item__details {
+    background: linear-gradient(to top, rgba(175, 175, 175, 0.9) 0%, rgba(255, 255, 255, 0) 5%);
+    font-size: 14px;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card-item__details--title {
+    font-size: 12px;  
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    font-weight: bold;
+       
+}
+.card-item__details--subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    font-weight: bold;
+}
